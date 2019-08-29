@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/fb08c0a972.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel='stylesheet' href='style.css'/>
+    
+    <title>CineMine</title>
+</head>
+<body>
+    <div class='page'>
+
+        <!-- Header -->
+        <div class='section header'>
+            <img src="images/filmheader.jpeg" alt="Cinema header">
+        </div>
+
+        <!-- Navigation -->
+            <nav>
+                <div class="handle">
+                    <div>Menu <i class="fas fa-bars"></i></div>
+                </div>
+                <ul>
+                    <a href="#"><li>CineMine</li></a>
+                    <a href="#"><li>Films: Playing Now</li></a>
+                    <a href="#"><li>Films: Coming Soon</li></a>
+                    <a href="#"><li>Schedule</li></a>
+                    <a href="#"><li>Events</li></a>
+                    <a href="#"><li>Contact</li></a>
+                </ul>    
+            </nav>
+        
+            <script>
+                $('.handle').on('click', function(){
+                    $('nav ul').toggleClass('showing')
+                })
+            </script>
+
+        <!-- Lastest news -->
+        <div class='section news'>
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            
+            <img class="mySlides" src="images/coming-soon.jpg" alt="Coming Soon">
+            <img class="mySlides" src="images/Toy-Story-4.jpg" alt="Toy Story 4">
+            <img class="mySlides" src="images/annabelle3.jpeg" alt="Annabelle Comes Home">
+            <img class="mySlides" src="images/spiderman.jpg" alt="Spider-Man: Far From Home">
+    
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+        <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+        </script>
+
+        <!-- Films -->
+        <div class="bg-films">
+            <div class="section film-head">Watch now!</div>
+            
+            <div class='section films'>
+                <div class="gallery"><img src="images/ADJ.jpg" alt="A Dog's Journey"><span>A Dog's Journey</span></div>
+                <div class="gallery"><img src="images/Aladdin.jpg" alt="Aladdin"><span>Aladdin</span></div>
+                <div class="gallery"><img src="images/Corgi.jpg" alt="Corgi"><span>Corgi</span></div>
+                <div class="gallery"><img src="images/DetectivePikachu.jpg" alt="Detective Pikachu"><span>Pokémon Detective Pikachu</span></div>
+                <div class="gallery"><img src="images/Dumbo.jpg" alt="Dumbo"><span>Dumbo</span></div>
+                <div class="gallery"><img src="images/Endgame.jpg" alt="Avengers: Endgame"><span>Avengers: Endgame</span></div>
+                <div class="gallery"><img src="images/Godzilla.jpg" alt="Godzilla: King of the Monsters"><span>Godzilla: King of the Monsters</span></div>
+                <div class="gallery"><img src="images/JohnWick3.jpg" alt="John Wick 3: Parabellum"><span>John Wick 3: Parabellum</span></div>
+                <div class="gallery"><img src="images/LaLlorona.jpg" alt="The Curse of La Llorona"><span>The Curse of La Llorona</span></div>
+                <div class="gallery"><img src="images/X-man.jpg" alt="X-Men: Dark Phoenix"><span>X-Men: Dark Phoenix</span></div>
+            </div>
+        </div>
+        
+        <!-- Contact -->
+        <div class='section contact'>
+            <div class="map"><img src="images/mapGenk.png" alt="map Genk"></div>
+            <div class="location">
+                <div>CineMine Genk</div>
+                <div>Bioscooplaan 123</div>
+                <div>3600 Genk</div>
+            </div>
+            <div class="contact-options">
+                <div><i class="fas fa-phone-alt"></i>089 .. .. ..</div>
+                <div><i class="fas fa-envelope"></i>info@CineMine.be</div>
+                <div><i class="fab fa-facebook"></i>https://www.facebook.com/CineMine</div>
+                <div><i class="fab fa-instagram"></i>https://www.instagram.com/cinemine/?hl=nl</div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <ul class="footer-row">
+            <li><a href="#">Conditions</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+
+    </div>      
+</body>
+</html>
+
+<!-- Notes 
+
+    Navigation
+    <div class="section navigation">
+            <ul>
+                <li><div><i class="fas fa-video"></i>CineMine</div></li>
+                <li><div>Schedule</div></li>
+                <li><div>Events</div></li>
+                <li class="dropdown"> 
+                    <a href="javascript:void(0)" class="dropbtn">Films</a>
+                        <div class="dropdown-content">
+                            <a href="#">Playing now</a>
+                            <a href="#">Coming Soon</a>
+                        </div>
+                </li>
+                <li><div>Contact</div></li>
+            </ul>
+        </div>
+
+-->
+

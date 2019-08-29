@@ -1,0 +1,331 @@
+/* used colors:
+rgba(189, 170, 156, 0.3) = bg films
+#630000 = bg page */
+
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap');
+/* font-family: 'Black Ops One', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap');
+/* font-family: 'Reem Kufi', sans-serif; */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #630000;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+  
+  /* Header */
+.header img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    background-color: #333;
+    font-family: 'Black Ops One', cursive;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul {
+    width: 100%;
+    font-size: 20px;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: max-height 0.4s; 
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 5px;
+    
+}
+
+nav ul li:hover {
+    background-color: darkgrey;
+}
+
+.handle {
+    width: 100%;
+    background-color: #333;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Black Ops One', cursive, 30px;
+    display: none;
+}
+
+.handle i {
+    margin-left: 15px;
+}
+
+
+/* Lastest news */
+.news {
+    padding: 20px;
+    padding-bottom: 50px;
+    background-image: linear-gradient( #630000 90%, rgba(189, 170, 156, 0.3))
+}
+
+.mySlides {
+    display:none;
+    height: 250px;
+}
+
+.w3-button {
+    height: 250px;
+    width: 30px; 
+}
+
+/* Films */
+.films {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.bg-films {
+    background-color: rgba(189, 170, 156, 0.3);
+}
+
+.film-head {
+    font-size: 35px; 
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 100px;
+    margin-top: 20px; 
+    font-family: 'Black Ops One', cursive;
+}
+
+.films div {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.films div span {
+    display: block;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 18px;
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(rgba(189, 170, 156, 0.3), #630000 10%)
+}
+
+.contact-options i {
+    margin-right: 10px;
+}
+
+.location div, .contact-options div {
+    margin-bottom: 10px;
+}
+
+.contact img {
+    width: 200px;
+}
+
+/* Footer */
+.footer-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: #333;
+}
+
+.footer-row li, .footer-row a {
+    list-style-type: none;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 5px;
+    font-family: 'Black Ops One', cursive;
+}
+
+/* XS Styles */
+@media only screen and (max-width: 575px) {
+    nav ul {
+        max-height: 0px;
+        font-size: 15px;
+    }
+
+    .showing {
+        max-height: 20em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+    } 
+    
+    .handle {
+        display: block;
+        font-size: 20px;
+    }
+
+    .mySlides {
+        height: 200px;
+        width: 80%;
+    }
+    
+    .w3-button {
+        height: 200px;
+        width: 20px; 
+    }
+
+    .bg-films, .film-head, .films {
+        margin: auto;
+        justify-content: center;
+    }
+    .news {
+        display: none;
+    }
+
+    .films {
+        order: 1;
+    }
+    .contact {
+        display: none;
+    }
+
+    .footer-row {
+        font-size: 10px;
+        order: 3;
+    }
+}
+
+/* S Styles */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    nav ul {
+        max-height: 0px;
+        font-size: 18px;
+    }
+
+    .showing {
+        max-height: 20em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+    } 
+    
+    .handle {
+        display: block;
+        font-size: 20px;
+    }
+
+    .mySlides {
+        height: 200px;
+        width: 80%;
+    }
+    
+    .w3-button {
+        height: 200px;
+        width: 20px; 
+    }
+
+    .bg-films, .film-head, .films {
+        margin: auto;
+        justify-content: center;
+    }
+    .news {
+        order: 2;
+        background-image: none;
+    }
+
+    .films {
+        order: 1;
+    }
+    .contact {
+        display: none;
+    }
+
+    .footer-row {
+        font-size: 10px;
+        order: 3;
+    }
+    
+    .section.navigation ul, .section.navigation a {
+        font-size: 20px;
+    }
+}
+
+/* M Styles */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    nav ul {
+        max-height: 0px;
+        font-size: 20px;
+    }
+
+    .showing {
+        max-height: 20em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+    } 
+    
+    .handle {
+        display: block;
+        font-size: 30px;
+    }
+}
+
+/* L Styles */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .page {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* XL Styles */
+@media only screen and (min-width: 1201px) {
+    .page {
+        margin: 0 auto;
+      }
+}
