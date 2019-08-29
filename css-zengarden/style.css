@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=News+Cycle&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cardo&display=swap');
+
+/* font-family: 'Cardo', serif; */
+/* font-family: 'News Cycle', sans-serif; */
+
+/* basis */
+body, html {
+    padding: 0; margin: 0;
+    background-image: url(images/blossomfalling.jpg);
+    background-color: #FAF1F9;
+    font-size: 20px;
+    font-family: 'News Cycle', sans-serif;
+}
+
+h3 {
+    font-family: 'Cardo', serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 300;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+h2 abbr {
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+abbr {
+    text-decoration: none;
+    font-style: oblique;
+}
+
+a {
+    text-decoration: none;
+    color: rebeccapurple
+}
+
+a:visited {color: mediumvioletred}
+a:hover {color: deeppink}
+
+p {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* banner */ 
+header {
+    background-image: url(images/cherryblossom.png);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    height: 60vh
+}
+
+h1, h2 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Cardo', serif;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: lighter;
+    color: black;
+    position: relative; 
+    top: 50%
+}
+
+/* summary */
+.summary {
+    text-align: center;
+    color: rgb(244, 66, 95);
+    font-size: 25px;
+    font-style: italic;
+    box-shadow: 0px -60px 150px 15px rgb(255, 255, 255);
+    -webkit-box-shadow: 0px -60px 150px 15px rgb(255, 255, 255);
+    -moz-box-shadow: 0px -60px 150px 15px rgb(255, 255, 255);
+}
+
+.preamble {
+    text-align: left;
+    background-color: rgb(255, 230, 255, 0.7);
+    margin: 20px;
+    padding-left: 25px;
+    box-shadow: 15px 15px 20px 30px rgb(255, 230, 255, 0.7);
+    -webkit-box-shadow: 15px 15px 20px 30px rgb(255, 230, 255, 0.7);
+    -moz-box-shadow: 15px 15px 20px 30px rgb(255, 230, 255, 0.7);
+}
+
+/* main */
+.explanation {
+    grid-area: grid1;
+    background-image: url(images/About.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    border-radius: 15%;
+    padding: 25px;
+    text-indent: -9999px;
+}
+
+.explanation:hover {
+    box-shadow: 15px 15px 40px 20px rgb(221, 180, 221);
+    -webkit-box-shadow: 15px 15px 40px 20px rgb(221, 180, 221);
+    -moz-box-shadow: 15px 15px 20px 40px rgb(221, 180, 221);
+    text-indent: 0px;
+    background-image: none;
+    overflow: scroll;
+}
+
+.participation {
+    grid-area: grid2;
+    background-image: url(images/Participation.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    border-radius: 15%;
+    padding: 25px;
+    text-indent: -9999px;
+}
+
+.participation:hover {
+    box-shadow: 15px 15px 40px 20px rgb(221, 180, 221);
+    -webkit-box-shadow: 15px 15px 40px 20px rgb(221, 180, 221);
+    -moz-box-shadow: 15px 15px 20px 40px rgb(221, 180, 221);
+    text-indent: 0px;
+    background-image: none;
+    overflow: scroll;
+}
+
+.benefits {
+    grid-area: grid3;
+    background-image: url(images/Benefits.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    border-radius: 15%;
+    padding: 25px;
+    text-indent: -9999px;
+}
+
+.benefits:hover {
+    box-shadow: 15px 15px 40px 20px rgb(221, 180, 221);
+    -webkit-box-shadow: 15px 15px 40px 20px rgb(221, 180, 221);
+    -moz-box-shadow: 15px 15px 20px 40px rgb(221, 180, 221);
+    text-indent: 0px;
+    background-image: none;
+    overflow: scroll;
+}
+
+.requirements {
+    grid-area: grid4;
+    background-image: url(images/Requirement.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    border-radius: 15%;
+    padding: 25px;
+    text-indent: -9999px;
+}
+
+.requirements:hover {
+    box-shadow: 15px 15px 40px 20px rgb(221, 180, 221);
+    -webkit-box-shadow: 15px 15px 40px 20px rgb(221, 180, 221);
+    -moz-box-shadow: 15px 15px 20px 40px rgb(221, 180, 221);
+    text-indent: 0px;
+    background-image: none;
+    overflow: scroll;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.main.supporting {
+    display: grid;
+    grid-template-columns: auto 500px 500px auto;
+    grid-template-rows: 500px 500px;
+    grid-template-areas: 
+        ". grid1 grid2 ." 
+        ". grid3 grid4 ."
+        "footer footer footer footer";
+    grid-gap: 50px;
+}
+
+.explanation, .participation, .benefits, .requirements {
+    background-color: rgb(255, 230, 255, 0.7);
+    text-align: left;
+    padding-left: 25px; padding-right: 25px;
+}
+
+footer {display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding-left: 25px;
+    background-color: rgb(255, 230, 255, 0.7);
+    box-shadow: 10px 10px 20px 20px rgb(255, 230, 255, 0.7);
+    -webkit-box-shadow: 15px 15px 20px 20px rgb(255, 230, 255, 0.7);
+    -moz-box-shadow: 15px 15px 20px 20px rgb(255, 230, 255, 0.7);
+    text-align: center;
+}
+
+/* Sidebar */        
+.wrapper {display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "col1 col2 col3";
+    margin: 20px;
+    padding-left: 25px;
+    font-size: 15px;
+    background-color: rgb(255, 230, 255, 0.7);
+    box-shadow: 15px 15px 20px 20px rgb(255, 230, 255, 0.7);
+    -webkit-box-shadow: 15px 15px 20px 20px rgb(255, 230, 255, 0.7);
+    -moz-box-shadow: 15px 15px 20px 20px rgb(255, 230, 255, 0.7);
+}
+
+.wrapper h3 {text-decoration: underline; 
+    text-decoration-style: solid
+}
