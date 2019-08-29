@@ -1,0 +1,57 @@
+body { text-align: left;
+padding: 40px}
+
+.container {
+    margin: auto;
+    border: 1px solid #eaecef;
+    padding: 60px;
+    width: 890px;}
+
+a href {padding: 7px}
+
+table, th, td { border: 1px solid black;
+border-collapse: collapse;
+border-spacing: 0px 0px;
+width: 40%;
+height: 30px;
+text-align: left;
+padding-bottom: 3px;
+padding-left: 13px;
+padding-right: 13px;
+padding-top: 3px;}
+
+tr:nth-child(even) {background-color: #e6e8e8;}
+
+h1, h2 { border-bottom: 1px solid darkgray;}
+
+.bolletjes { list-style-type: circle;}
+
+.exercise {font-style: italic;}
+
+.checklist {list-style-type: none;} 
+
+code {background-color: #cdd1d2;
+display: inline;
+padding: 3px;
+letter-spacing: 2px}
+
+code2 { font-style: italic;
+font-weight: bold;
+font-size: 12px}
+
+code3 {font-weight: bold;
+font-size: 12px}
+
+code4 {font-style: italic}
+
+h1 {font-size: 36px;}
+h2 {font-size: 28px;}
+h3 {font-size: 20px;}
+
+h1, h2, h3 {font-family: "Segoe UI",""Helvetica", "Arial", sans-serif;}
+
+  
+
+
+
+    
