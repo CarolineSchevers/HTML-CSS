@@ -1,0 +1,225 @@
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* grid chessboard */
+.chessboard {
+    display: grid;
+    height: 640px;
+    width: 640px;
+    grid-template-areas:
+        " . L1 ."
+        "N1 pieces N2"
+        ". L2 ."
+}
+
+.letters-top {
+    grid-area: L1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #39424b;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    height: 10px;
+}
+
+.letters-bottom {
+    grid-area: L2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #39424b;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    height: 10px;
+}
+
+.numbers-left {
+    grid-area: N1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #39424b;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    width: 10px;
+}
+
+.numbers-right {
+    grid-area: N2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #39424b;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    width: 10px;
+}
+
+.chess-grid {
+    grid-area: pieces;
+}
+
+/* grid pieces */
+.chess-grid {
+    background-image: url(images/Chessboard.jpg);
+    display: grid;
+    height: 640px;
+    width: 640px;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat(8, 80px);
+    grid-template-areas: 
+        "A8 B8 C8 D8 E8 F8 G8 H8"
+        "A7 B7 C7 D7 E7 F7 G7 H7"
+        "A6 B6 C6 D6 E6 F6 G6 H6"
+        "A5 B5 C5 D5 E5 F5 G5 H5"
+        "A4 B4 C4 D4 E4 F4 G4 H4"
+        "A3 B3 C3 D3 E3 F3 G3 H3"
+        "A2 B2 C2 D2 E2 F2 G2 H2"
+        "A1 B1 C1 D1 E1 F1 G1 H1";
+    text-align: center;
+    align-items: center;
+}
+
+.chess-grid img {
+    height: 80px;
+    width: 80px;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Black pawns */
+.bl-pawn1{
+    grid-area: "A7";
+}
+.bl-pawn2{
+    grid-area: "B7";
+}
+.bl-pawn3{
+    grid-area: "C7";
+}
+.bl-pawn4{
+    grid-area: "D7";
+}
+.bl-pawn5{
+    grid-area: "E7";
+}
+.bl-pawn6{
+    grid-area: "F7";
+}
+.bl-pawn7{
+    grid-area: "G7";
+}
+.bl-pawn8{
+    grid-area: "H7";
+}
+
+/* White pawns */
+.wh-pawn1{
+    grid-area: A2;
+}
+.wh-pawn2{
+    grid-area: B2;
+}
+.wh-pawn3{
+    grid-area: C2;
+}
+.wh-pawn4{
+    grid-area: D2;
+}
+.wh-pawn5{
+    grid-area: E2;
+}
+.wh-pawn6{
+    grid-area: F2;
+}
+.wh-pawn7{
+    grid-area: G2;
+}
+.wh-pawn8{
+    grid-area: H2;
+}
+
+/* Black rooks */
+.bl-rook1{
+    grid-area: A8;
+}
+
+.bl-rook2{
+    grid-area: H8;
+}
+
+/* White rooks */
+.wh-rook1{
+    grid-area: A1;
+}
+
+.wh-rook2{
+    grid-area: H1;
+}
+
+/* Black knights */
+.bl-knight1{
+    grid-area: B8;
+}
+
+.bl-knight2{
+    grid-area: G8;
+}
+
+/* White knights */
+.wh-knight1{
+    grid-area: B1;
+}
+
+.wh-knight2{
+    grid-area: G1;
+}
+
+/* Black bishops */
+.bl-bishop1{
+    grid-area: C8;
+}
+
+.bl-bishop2{
+    grid-area: F8;
+}
+
+/* White bishops */
+.wh-bishop1{
+    grid-area: C1;
+}
+
+.wh-bishop2{
+    grid-area: F1;
+}
+
+/* Kings */
+.king-black {
+    grid-area: E8;
+}
+
+.king-white {
+    grid-area: E1;
+}
+
+/* Queens */
+.queen-black {
+    grid-area: D8;
+}
+
+.queen-white {
+    grid-area: D1;
+}
+
+
