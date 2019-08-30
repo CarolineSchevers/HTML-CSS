@@ -1,1 +1,1 @@
-Result: [Pokedex](https://carolineschevers.github.io/HTML-CSS/pokedex/)
+Result: [Pokedex](https://carolineschevers.github.io/HTML-CSS/pokedex/index.html)
