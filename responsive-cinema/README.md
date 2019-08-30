@@ -1,4 +1,4 @@
-[CineMine](https://carolineschevers.github.io/HTML-CSS/responsive-cinema/)
+Result: [CineMine](https://carolineschevers.github.io/HTML-CSS/responsive-cinema/)
 
 # Challenge: Responsive cinema page(s)
 
