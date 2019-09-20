@@ -1,4 +1,4 @@
-Result: [Chessboard](https://carolineschevers.github.io/grid-chessboard/.)
+Result: [Chessboard](https://carolineschevers.github.io/HTML-CSS/grid-chessboard/.)
 
 # Challenge: Grid chessboard
 
